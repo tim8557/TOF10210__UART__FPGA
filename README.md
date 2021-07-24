@@ -43,14 +43,21 @@ The picture is the time sequence of rx_module. The description of the parameters
 ### The tx_module
 The tx_module is used to receive the parallel communication data and transfer it into serial<br>
 communication data. The picture is the input and output ports of tx_module.<br>
+<br>
 <img src="https://github.com/tim8557/TOF10210__UART__FPGA/blob/main/images/tx_module_2.JPG" width="300" ><br>
 <br>
 <br>
 ### The time sequence of tx_module
 The picture is the time sequence of tx_module. The description of the parameters is below.<br>
+<br>
 ![image](https://github.com/tim8557/TOF10210__UART__FPGA/blob/main/images/tx_time_sequence.JPG)<br>
 <br>
 **clk:** clock frequency<br>
 **rst:** reset signal<br>
-**pi_sig:** 
-**pi_data:**
+**pi_sig:** the end signal from rx module<br>
+**pi_data:** the data signal from rx module<br>
+**work_en:** enable the counter to count<br>
+**baud_cnt:** count the time interval between each bit<br>
+**bit_sig:** this signal is used to sample the input data rx<br>
+**bit_cnt:** count the number of bits<br>
+**tx:** the serial communication data<br>
