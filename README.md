@@ -9,6 +9,11 @@ use UART or I2C interface to communicate with FPGA.<br>
 ## UART communication protocal
 We used UART communication protocal to communicate with FPGA. The picture shows the time sequence when we<br>
 use the TOF10210.<br>
+<br>
+### The Baud rate
+The baud rate in our project is 9600 bps. The time interval between each bit is 104.17 us. We used the counter to<br>
+count the number of bit with the clock frequency of 50 MHz. The counter needed to reset when we count to 5207.
+CNT_MAX = (1/(aud 
 
 ### The rx_module
 The rx_module is used to receive the serial communication data from TOF10210 and transfer it into parallel<br>
@@ -34,4 +39,4 @@ The picture is the time sequence of rx_module. The description of the parameters
 **po_sig:** output the finish signal
 **po_data:** output the processed data<br>
 <br>
-![image](https://github.com/tim8557/TOF10210__UART__FPGA/blob/main/images/rx_module_2.JPG)<br>
+![image](https://github.com/tim8557/TOF10210__UART__FPGA/blob/main/images/rx_time_sequence_2.JPG)<br>
