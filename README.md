@@ -9,9 +9,10 @@ use UART or I2C interface to communicate with FPGA.<br>
 ## UART communication protocal
 ### The Baud rate
 The baud rate in our project is 9600 bps. The time interval between each bit is 104.17 us. We used the counter to<br>
-count the number of bit with the clock frequency of 50 MHz. The counter needed to reset when we count to 5207.
-CNT_MAX is the number that counter need to be reset.
-CNT_MAX = (1/(baud rate))*49999999
+count the number of bit with the clock frequency of 50 MHz. The counter needed to reset when we count to 5207.<br>
+CNT_MAX is the number that counter need to be reset.<br>
+<br>
+CNT_MAX = (1/(baud rate))*49999999<br>
 
 ### The rx_module
 The rx_module is used to receive the serial communication data from TOF10210 and transfer it into parallel<br>
