@@ -35,7 +35,7 @@ The picture is the time sequence of rx_module. The description of the parameters
 **bit_cnt:** count the number of bits<br>
 **data:** store the rx data into register<br>
 **rx_sig:** the finish signal of the data transformation<br>
-**po_sig:** output the finish signal
+**po_sig:** output the finish signal<br>
 **po_data:** output the processed data<br>
 <br>
 ![image](https://github.com/tim8557/TOF10210__UART__FPGA/blob/main/images/rx_time_sequence_2.JPG)<br>
@@ -61,3 +61,6 @@ The picture is the time sequence of tx_module. The description of the parameters
 **bit_sig:** this signal is used to sample the input data rx<br>
 **bit_cnt:** count the number of bits<br>
 **tx:** the serial communication data<br>
+
+
+## Result
