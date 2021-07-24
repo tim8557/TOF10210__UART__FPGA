@@ -12,8 +12,10 @@ use the TOF10210.<br>
 
 ### The rx_module
 The rx_module is used to receive the serial communication data from TOF10210 and transfer it into parallel<br>
-communication data. The picture is the input and output ports of rx_module.
-![image](https://github.com/tim8557/TOF10210__UART__FPGA/blob/main/images/rx_time_sequence_2.JPG)
-
+communication data. The picture is the input and output ports of rx_module.<br>
+<br>
+<img src="https://github.com/tim8557/TOF10210__UART__FPGA/blob/main/images/rx_module.JPG" width="200" ><br>
+<br>
 ### The time sequence of rx_module
 The picture is the time sequence of rx_module
+![image](https://github.com/tim8557/TOF10210__UART__FPGA/blob/main/images/rx_time_sequence_2.JPG)
