@@ -17,7 +17,7 @@ communication data. The picture is the input and output ports of rx_module.<br>
 <img src="https://github.com/tim8557/TOF10210__UART__FPGA/blob/main/images/rx_module.JPG" width="400" ><br>
 <br>
 ### The time sequence of rx_module
-The picture is the time sequence of rx_module.<br>
+The picture is the time sequence of rx_module. The description of the parameters is below.<br>
 <br>
 **clk:** clock frequency<br>
 **rst:** reset signal<br>
@@ -34,4 +34,4 @@ The picture is the time sequence of rx_module.<br>
 **po_sig:** output the finish signal
 **po_data:** output the processed data<br>
 <br>
-![image](https://github.com/tim8557/TOF10210__UART__FPGA/blob/main/images/rx_time_sequence_2.JPG)<br>
+![image](https://github.com/tim8557/TOF10210__UART__FPGA/blob/main/images/rx_module_2.JPG)<br>
