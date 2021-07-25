@@ -86,3 +86,6 @@ Char:  1  6  0  m   m  ^M  ^J<br>
 ![image](https://github.com/tim8557/TOF10210__UART__FPGA/blob/main/images/control_ascii_module.JPG)<br>
 
 ## Result
+We use the TOF10210 module and measure the distance from obstacle. The unit is centimeter.<br>
+<br>
+<img src="https://github.com/tim8557/TOF10210__UART__FPGA/blob/main/images/result_tof10210.jpg" width="400" ><br>
