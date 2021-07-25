@@ -61,6 +61,28 @@ The picture is the time sequence of tx_module. The description of the parameters
 **bit_sig:** this signal is used to sample the input data rx<br>
 **bit_cnt:** count the number of bits<br>
 **tx:** the serial communication data<br>
-
+<br>
+### The ASCII control module
+The TOF10210 module will send ASCII code to FPGA, so we need a module to process. The picture<br>
+show the time sequence and how the ASCII control module work. For example, when the distance is 16 cm<br>
+from obstacle to TOF10210, TOF10210 will send the data 31 36 30 6D 6D 0D 0A to FPGA.<br>
+<br>
+ASCII: 31 36 30 6D 6D 0D 0A<br>
+DEC:   49 54 48 109 109 13 10<br>
+Char:  1  6  0  m   m  ^M  ^J<br>
+<br>
+**clk:** clock frequency<br>
+**rst:** reset signal<br>
+**pi_sig:** the end signal from rx module<br>
+**pi_data:** the data signal from rx module<br>
+**data_num:** number of input data<br>
+**data_en:** enable signal to do the data transformation<br>
+**data_trans:** extrat the bits from pi_data<br>
+**sum_sig:** the enable signal to do the addition<br>
+**data_sum:** data through the multiplication and addition process<br>
+**dis_sig:** the signal to send the processed data to binary coded decimal module<br>
+**data_dis:** this data is sent to the binary coded decimal module<br> 
+<br>
+![image](https://github.com/tim8557/TOF10210__UART__FPGA/blob/main/images/control_ascii_module.JPG)<br>
 
 ## Result
