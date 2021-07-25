@@ -81,6 +81,8 @@ Char:  1  6  0  m   m  ^M  ^J<br>
 **sum_sig:** the enable signal to do the addition<br>
 **data_sum:** data through the multiplication and addition process<br>
 **dis_sig:** the signal to send the processed data to binary coded decimal module<br>
+**data_dis:** this data is sent to the binary coded decimal module<br> 
+<br>
 ![image](https://github.com/tim8557/TOF10210__UART__FPGA/blob/main/images/control_ascii_module.JPG)<br>
 
 ## Result
